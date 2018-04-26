@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="book-stack-fav-icon.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|East+Sea+Dokdo|Megrim|Monoton|Permanent+Marker|Rock+Salt|Squada+One|UnifrakturMaguntia" rel="stylesheet">
+  <title>Counter Culture Bakery</title>
+</head>
+  <body>
+    <header>
+        <h1 class="myheader">Counter Culture Bakery</h1>
+      <%# hamburger menu courtesy of https://jonsuh.com/hamburgers/%>
+        <ul>
+          <li class="navlinks"><a href="/">Home</a></li>
+          <li class="navlinks"><a href="/donuts">Donuts</a></li>
+          <li class="navlinks"><a href="/cupcakes">Cupcakes</a></li>
+          <li class="navlinks"><a href="/cakes">Cakes</a></li>
+        </ul>
+    </header>
+      
+        <img class="mainimg" src="images/6545196785_eb5a3ae980-sharp.jpg">
+        <img class="mainimg" src="images/anton-belashov-604196-unsplash.jpg">
+        <img class="mainimg" src="images/Sweet-Fantasy-Cakes-Graffiti-Murals-3-600x400.jpg">
+        <img class="mainimg" src="images/cupcake-mural-melbourne.jpg">
+        <%#courtesy of https://www.w3schools.com/w3css/w3css_slideshow.asp%>
+      <div id="main">
+        <main>       
+            <div class="grid-container">
+              <div class="donutscat"><a href="/donuts">Doughnuts<img src="images/donuts/heather-schwartz-493953-unsplash.jpg" class="donutscat"></a></div>
+              <div class="cupcakescat"><a href="cupcakes">Cupcakes<img src="images/cupcakes/edgar-castrejon-459810-unsplash.jpg" class="cupcakescat"></a></div>
+              <div class="cakescat"><a href="cakes">Cakes<img src="images/cakes/alex-loup-392625-unsplash.jpg" class="cakescat"></a></div>
+            </div>
+        </main>
+        <aside class="modalFadeIn">
+          <%= yield %>
+        </aside>
+
+      </div>
+       <footer> 
+          <p>Contact Us</p>
+          P.O. Box 19268<br>
+          1000 GG Amsterdam<br>
+          The Netherlands<br>
+          +31 (0)20 525 1400<br>  
+      </footer>
+      <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
