@@ -13,14 +13,15 @@
 </head>
   <body>
     <header>
-        <h1 class="myheader">Counter Culture Bakery</h1>
-      <%# hamburger menu courtesy of https://jonsuh.com/hamburgers/%>
-        <ul>
-          <li class="navlinks"><a href="/">Home</a></li>
-          <li class="navlinks"><a href="/cupcakes">Cupcakes</a></li>
-          <li class="navlinks"><a href="/donuts">Donuts</a></li>
-          <li class="navlinks"><a href="/cakes">Cakes</a></li>
-        </ul>
+        <div class="left-nav"><h1 class="myheader">Counter Culture Bakery</h1></div>
+        <div class="right-nav">
+          <ul>
+            <li class="navlinks right-nav"><a href="/">Home</a></li>
+            <li class="navlinks right-nav"><a href="/donuts">Donuts</a></li>
+            <li class="navlinks right-nav"><a href="/cupcakes">Cupcakes</a></li>
+            <li class="navlinks right-nav"><a href="/cakes">Cakes</a></li>
+          </ul>
+        </div>
     </header>
     <section>
         <%= yield %> 
