@@ -29,7 +29,7 @@ header {
   padding: 0px;
   box-shadow: #6d5e6dad 3px 3px 3px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .myheader {
   font-family: 'Permanent Marker', cursive;
@@ -265,9 +265,17 @@ footer {
   height: 150px;
   padding: 30px;
 }
-@media screen and (max-width: 600px) {
-    .navlinks a, .right-nav, .left-nav {
+@media screen and (max-width: 750px) {
+    .navlinks .right-nav .left-nav {
         float: none;
         width: 50%;
+        font-size: x-small;
     }
+    header {
+      height: 180px;
+      display: block;
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 100px;
+    }
+
 }
