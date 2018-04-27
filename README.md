@@ -1,10 +1,9 @@
 COUNTER CULTURE BAKERY
 
-C C ANIMATE THE CS and style them in an counter culture style. 
+A mock website for the modern baker—hipster meets, punk, meets graffiti style to appeal to a less traditional but just as avid audience. 
 
-anarchist colors: electric pink black blue (maybe set any blue to have a blue linear gradient over it
+Built to showcase all of the products available—from cupcakes to donuts—and to allow mock bakeshop owner to send catalog emails using the SendGrid API.
 
-Modeled after this Awwward nominated French site Punk Is Not Dead:
-http://pind.univ-tours.fr/
+Languages used include Ruby, JavaScript, Sinatra, CSS/HTML, and web APIs.
 
-animations on scroll and a few on hover
+All images credited to Yummly; this is for noncommercial, student purposes only.
