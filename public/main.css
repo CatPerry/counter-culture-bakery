@@ -31,7 +31,11 @@ header {
   position: relative;
   overflow: visible;
 }
+h1 {
+  width: 100%;
+}
 .myheader {
+  width: 100%;
   font-family: 'Permanent Marker', cursive;
   word-wrap: none;
   font-size: 3.6em;
@@ -47,7 +51,7 @@ header {
   list-style-type: none;
 }
 .right-nav {
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
 }
 ul {
@@ -59,25 +63,19 @@ ul {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1em;
     letter-spacing: 5px;
-    display: block;
-    padding: 20px;
+    padding: 10px;
     /* grid-column-start: 6; */
-    margin-top: 0px;
+    margin-top: 15px;
     /* text-align: center; */
     text-decoration: none;
     line-height: 5px;
     list-style-type: none; 
-}
-/* .sticky {
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 5;
+    word-break: keep-all;
 }
-header.sticky {
-    padding-top: 60px;
-    z-index: 5;
-} */
+.navlinks a:hover {
+  background-color: black 1px 1px 1px;
+}
 .mainimg {
   width: 100%;
   height: 650px;
@@ -96,10 +94,6 @@ div.main {
   grid-area: main;
   grid-template-areas: 
     "main main . sidebar";
-}
-.hamburgernav {
-  align: right;
-  z-index: 3;
 }
 img.donutscat {
   width: 100%;
@@ -265,17 +259,91 @@ footer {
   height: 150px;
   padding: 30px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1250px) {
     .navlinks .right-nav .left-nav {
         float: none;
         width: 50%;
         font-size: x-small;
     }
     header {
-      height: 180px;
-      display: block;
+      height: 140px;
+      display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 100px 100px;
+      grid-template-rows: 70px 70px;
+      line-height: 1.5;
     }
-
+    .myheader {
+      font-size: 2.4em;
+    }
+    #usrform {
+      background-color: #E2DEFF;
+      padding: 30px;
+      color: black;
+      font-family: 'Megrim', cursive;
+      font-size: 0.9em;
+      width: 100%;
+      height: 180px;
+    }
+    aside {
+      opacity: 0;
+      position: absolute;
+      top: 150px;
+      right: 30px;
+      width: 100px;
+      height: 200px;
+      animation: modalFadeIn 2.6s forwards;
+    }
+    @keyframes modalFadeIn {
+      0% {opacity: 0;}
+      10% {opacity: 0.10;}
+      15% {opacity: 0.15;}
+      25% {opacity: 0.25;}
+      35% {opacity: 0.35;}
+      50% {opacity: 0.5;}
+      60% {opacity: 0.6;}
+      75% {opacity: 0.75;}
+      85% {opacity: 0.85;}
+      100% {opacity: 1;}
+    }
+    section {
+      background-color: #E2DEFF;
+      padding-top: 15px;
+      margin-top: 0px;
+      color: black;
+      font-family: 'Megrim', cursive;
+      text-align: center;
+      font-size: 0.9em;
+      width: 100%;
+      height: 200px;
+      line-height: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+      height: 90px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50px 40px;
+      line-height: 1.5;
+    }
+    .myheader {
+      font-size: 1.8em;
+      padding: 10px;
+      text-align: center;
+    }
+    .navlinks a {
+      font-size: 0.7em;
+      text-align: center;
+    }
+    .mainimg {
+      width: 100%;
+      height: 350px;
+      align-items: center;
+      /* margin-left: 40px;
+      margin-right: 20px; */
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0px;
+      display: none;
+    }
 }
