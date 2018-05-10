@@ -283,13 +283,16 @@ footer {
       font-size: 0.9em;
       width: 100%;
       height: 180px;
+      position: absolute;
+      top: 150px;
+      right: 30px;
     }
     aside {
       opacity: 0;
       position: absolute;
       top: 150px;
       right: 30px;
-      width: 100px;
+      width: 140px;
       height: 200px;
       animation: modalFadeIn 2.6s forwards;
     }
@@ -346,4 +349,99 @@ footer {
       padding: 0px;
       display: none;
     }
+    .grid-images {
+    width: 100px;
+    height: 100px;
+    }
+}
+/* @media screen and (max-width: 900px) and (min-width: 600px) */
+@media screen and (max-width: 400px) and (min-width: 200px) {
+    header {
+      height: 90px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50px 40px;
+      line-height: 1.5;
+    }
+    .myheader {
+      font-size: 1.5em;
+      padding: 10px;
+      text-align: center;
+    }
+    .navlinks a {
+      font-size: 0.5em;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    #usrform {
+      background-color: #E2DEFF;
+      padding: 10px;
+      color: black;
+      font-family: 'Megrim', cursive;
+      font-size: 0.5em;
+      width: 100%;
+      height: 120px;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+    }
+    input {
+      width: 90px;
+    }
+    aside {
+      opacity: 0;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      width: 100px;
+      height: 130px;
+      animation: modalFadeIn 2.6s forwards;
+    }
+    @keyframes modalFadeIn {
+      0% {opacity: 0;}
+      10% {opacity: 0.10;}
+      15% {opacity: 0.15;}
+      25% {opacity: 0.25;}
+      35% {opacity: 0.35;}
+      50% {opacity: 0.5;}
+      60% {opacity: 0.6;}
+      75% {opacity: 0.75;}
+      85% {opacity: 0.85;}
+      100% {opacity: 1;}
+    }
+    section {
+      background-color: #E2DEFF;
+      padding-top: 15px;
+      margin-top: 0px;
+      color: black;
+      font-family: 'Megrim', cursive;
+      text-align: center;
+      font-size: 0.5em;
+      width: 100%;
+      height: 80px;
+      line-height: 15px;
+    }
+    .all-items-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 100px;
+      /* grid-column-gap: 15px;
+      grid-row-gap: 15px; */
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 32px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 0.6em;
+      text-align: center;
+      }
+      footer {
+        background-color: #E2DEFF;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        height: 130px;
+        margin: 10px;
+        padding: 5px;
+      }
 }
