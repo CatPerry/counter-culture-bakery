@@ -26,7 +26,6 @@ get "/cakes" do
 end
 
 post "/" do
-  sg = SendGrid::API.new(api_key: ENV["API_KEY"])
   subject = params[:name]
   content = Content.new(type: 'text/html', 
     value: 
@@ -96,6 +95,7 @@ post "/" do
     
   # # create mail object with from, subject, to and content
   mail = Mail.new(from, subject, to, content)
+  sg = SendGrid::API.new(api_key: ENV["API_KEY"])
   # sends the email
   response = sg.client.mail._('send').post(request_body: mail.to_json)
 
